@@ -244,15 +244,16 @@
 
 				// sounds
 
-				//var listener = new THREE.AudioListener();
-				//camera.add( listener );
+				var listener = new THREE.AudioListener();
+				camera.add( listener );
 
-				/*
+				
 				var sound = new THREE.Audio( listener );
 				sound.load( 'sounds/78389__inchadney__seagulls.ogg' );
 				sound.position.set( 475, 50, 850 );
 				sound.setLoop( true );
 				sound.setRefDistance( 100 );
+				sound.autoplay = true;
 				scene.add( sound );
 
 				var sound = new THREE.Audio( listener );
@@ -260,6 +261,7 @@
 				sound.position.set( 10, 50, -200 );
 				sound.setLoop( true );
 				sound.setRefDistance( 100 );
+				sound.autoplay = true;
 				scene.add( sound );
 
 				var sound = new THREE.Audio( listener );
@@ -267,8 +269,9 @@
 				sound.position.set( -30, 0, -750 );
 				sound.setLoop( true );
 				sound.setRefDistance( 100 );
+				sound.autoplay = true;
 				scene.add( sound );
-				*/
+				
 
 				// camera path
 
